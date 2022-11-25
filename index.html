@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora Macro nutrientes</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>CALCULADORA MACRO NUTRIENTES</h1>
+        </div>
+    </header>
+
+    <div class="calc-container">
+        <form action="index.php" method="POST">
+            <fieldset>
+                <legend>CALCULADORA</legend>
+                <div class="fieldset-container">
+                    <label for="nome"><h4>Seu nome: </label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                    <br>
+                    <br>
+                    <label for="idade">Idade: </label>
+                    <input type="number" name="idade" id="idade" placeholder="Digite sua idade" required>
+                    <br>
+                    <br>
+                    <label for="peso">Peso:</label>
+                    <input type="text" name="peso" id="peso" placeholder="Digite seu peso" required>
+                    <br>
+                    <br>
+                    <label for="altura">Sua altura: </label>
+                    <input type="text" name="altura" id="altura" placeholder="Digite sua altura Ex.: 170" required>
+                    <br>
+                    <br>
+                    <label for="sexo">Sexo</label>
+                    <select name="sexo" id="sexo" required>
+                        <option value="1">Masculino</option>
+                        <option value="2">Feminino</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="objetivo">Você quer</label>
+                    <select name="objetivo" id="objetivo" required>
+                        <option value="1">Perder gordura</option>
+                        <option value="2">Ganhar massa muscular</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="dias">Dias de atividade física na semana</label>
+                    <select name="dias" id="dias" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                    <br>
+                    <br>
+                </h4>
+                    <input class = "button" type="submit" value="Calcular">
+                </div>
+            </fieldset>
+        </form>
+        <br>
+        <br>
+
+        <h5>* Calculadora baseada na fórmula de <i>Mifflin St Jeor</i></h5>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; Copyright 2022</p>
+            <h3>Gustavo Vieira e Pedro Oliveira</h3>
+        </div>
+    </footer>
+</body>
+</html>
